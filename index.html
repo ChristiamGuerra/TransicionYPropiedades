@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viwport" content="width:device-width,user-escalable=no">
+    <title>Animación y Propiedades</title>
+    <style media="screen">
+      #contenedor{
+        width: 1000px;
+        height: 600px;
+        border: 2px solid;
+        /* NOTE: auto centra el contenedor */
+        margin: 0 auto;
+        background-color: blue;
+        transition: background 1s;
+      }
+      #contenedor img {
+        width: 200px;
+        height: 200px;
+        /* NOTE: se puede aplicar transition a muchas propiedades de un elemento utilizando "transition-property" */
+        transition-property: width, height;
+        transition-duration: 2s, 4s;
+      }
+      #contenedor img:hover{
+        height: 100%;
+        width: 100%;
+      }
+
+      #contenedor:hover{
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="contenedor">
+      <img src="img/balon.png" alt="">
+
+    </section>
+  </body>
+</html>
